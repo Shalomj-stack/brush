@@ -1,0 +1,136 @@
+@import 'variables';
+@import 'resets';
+
+
+body {
+    font-family: Helvetica, sans-serif;
+    color: $text-color;
+}
+
+header {
+    width: 90%;
+    display: flex;
+    height: 10vh; 
+    margin: auto;
+    align-items: center;
+    letter-spacing: 1px;
+
+    .logo-container {
+        flex: 3;
+
+        h1 {
+            font-size: 40px;
+            color: $primary-color;
+        }
+    }
+
+    nav {
+        flex: 6;
+        text-transform: uppercase;
+
+        .nav-links {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            
+
+            .nav-link {
+                text-decoration: none;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .cart {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+
+        .image {
+            width: 30%;
+            height: 50%;
+
+            img {
+                height: 100%;
+            }
+        }
+    }
+}
+
+main {
+    height: 90vh;
+}
+
+.showcase-area {
+    width: 90%;
+    height: 80vh;
+    display: flex;
+    margin: auto;
+
+    .showcase-text {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        letter-spacing: 1px;
+
+        h1 {
+            font-size: 40px;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        .cta {
+            margin-top: 30px;
+            display: block;
+            
+
+            .brush-type {
+                width: 110px;
+                height: 35px;
+                letter-spacing: 1px;
+                font-size: 12px;
+                text-transform: uppercase;
+                text-align: center;
+                background-color: $primary-color;
+                border: none;
+                color: white;
+                outline: none;
+                cursor: pointer;
+            }
+
+            .add-cart {
+                width: 110px;
+                height: 35px;
+                letter-spacing: 1px;
+                font-size: 12px;
+                text-transform: uppercase;
+                text-align: center;
+                background-color: transparent;
+                border: 2px solid #ddd;
+                outline: none;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .showcase-img {
+        flex: 1;
+        border: none;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+            img {
+                height: 70%;
+                width: 60%;
+                position: absolute;
+                right: 70px;
+            }
+        
+    }
+}
